@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>Popup</title>
+</head>
+<body>
+    <div class="contenido">
+        <h1>Esta es una muestra de texto</h1>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+    
+    <div class="botón">
+        <button onclick="toggle()">Cambiar</button>
+    </div>
+
+    <div id="cambiar" class="fondo oculto desvanecerB">
+        <div class="popup">
+            <div class="contenidoPopup">
+
+                <div id="imagenIzquierda">
+                </div>
+    
+                <div id="contenidoDerecha">
+                    <div class="titulo tOrange">
+                        <h1>Bienvenido a Q·enta</h1>
+                    </div>
+                    <br>
+                    <h3>Tenemos dos cosas importantes que decirte</h3>
+                    <br>
+                    <h3>1.- Actualmente tienes una licencia habilitada por</h3>
+                    <h3>30 días. Después de confirmar tu pago, tu</h3>
+                    <h3>suscripción estará activa por el tiempo que has</h3>
+                    <h3>elegido.</h3>
+                    <br>
+                    <h3>2.- Comunicate con nuestra linea de atención</h3>
+                    <h3>PBX (+57)(1)7467800 e inicia la parametrización de</h3>
+                    <h3>tu empresa para que empieces a gestionarla y a</h3>
+                    <h3>facturar con Q·enta lo más pronto posible.</h3>
+                    <br>
+                    <div class="footer">
+                        <h3><span class="tOrange">Q·enta te lleva</span> a la productividad digital.</h3>
+                    </div>
+                    <br>
+                    <div id="empecemosDiv">
+                        <h2 onclick="fadeOut()" id="empecemos" class="tOrange">Empecemos ></h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
