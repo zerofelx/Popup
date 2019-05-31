@@ -29,6 +29,7 @@ body {
 .imagen:hover {
     animation-duration: 1s;
     animation-name: acordeon;
+    width: 30%
     /* animation-iteration-count: infinite; */
 }
 .imagen:hover > .texto {
