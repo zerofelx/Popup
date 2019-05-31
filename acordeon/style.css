@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+}
+
+.centradoTotal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.imagen {
+    width: 20%;
+    background-image: url('imagen.jpg');
+    height: 50vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+
+    animation-duration: 0.2s;
+    animation-name: acordeonOut;
+}
+.texto {
+    display: none;
+    color: white;
+}
+.imagen:hover {
+    animation-duration: 0.2s;
+    animation-name: acordeon;
+    animation-iteration-count: infinite;
+}
+.imagen:hover > .texto {
+    display: inherit;
+    transition: color 5
+}
+
+@keyframes acordeon {
+    from {
+        width: 20%;
+    }
+
+    to {
+        width: 30%
+    }
+}
+
+@keyframes acordeonOut {
+    from {
+        width: 30%;
+    }
+
+    to {
+        width: 20%
+    }
+}
