@@ -60,7 +60,7 @@ body {
     width: 38%;
     height: 100%;
     background-image: url('PopUp.png');
-    background-size: contain;
+    background-size: cover;
     /* border: 1px solid grey; */
     border-radius: 20px 0 0 20px;
     background-repeat: no-repeat;
