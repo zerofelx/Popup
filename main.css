@@ -74,6 +74,7 @@ body {
 }
 #contenidoDerecha h4, #contenidoDerecha h2{
     margin: 0;
+    font-weight: 400;
 }
 #contenidoDerecha h4 {
     width: 80%;
@@ -89,7 +90,6 @@ body {
 .linkPopup {
     text-decoration: none;
 }
-
 
 #empecemosDiv {
     width: 90%;
