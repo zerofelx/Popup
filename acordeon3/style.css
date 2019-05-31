@@ -19,7 +19,7 @@ body {
     align-items: center;
     margin: 2px;
 
-    animation-duration: 0.2s;
+    animation-duration: 0.5s;
     animation-name: acordeonOut;
 }
 .texto {
