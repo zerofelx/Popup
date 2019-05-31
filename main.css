@@ -44,7 +44,7 @@ body {
 }
 .popup {
     width: 70%;
-    height: 80%;
+    height: 66%;
     background: white;
     border: 1px solid grey;
     border-radius: 20px;
@@ -59,24 +59,42 @@ body {
 #imagenIzquierda {
     width: 35%;
     height: 100%;
-    background-image: url('imagen.jpg');
-    background-size: cover;
-    border: 1px solid grey;
+    background-image: url('PopUp.png');
+    background-size: contain;
+    /* border: 1px solid grey; */
     border-radius: 20px 0 0 20px;
+    background-repeat: no-repeat;
 
 }
 #contenidoDerecha {
     width: 65%;
     padding: 5px 20px 10px;
     align-items: center;
+    margin: 0 auto;
 }
-#contenidoDerecha h3, #contenidoDerecha h2{
+#contenidoDerecha h4, #contenidoDerecha h2{
     margin: 0;
 }
+#contenidoDerecha h4 {
+    width: 80%;
+}
+.divLink {
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #FF9924;
+    border-radius: 15px;
+    padding: 10px;
+    width: 60%;
+}
+.linkPopup {
+    text-decoration: none;
+    border: 2px solid #FF9924;
+}
+
+
 #empecemosDiv {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end    
+    width: 90%;
+    text-align: right;
 }
 #empecemos:hover {
     cursor: pointer;
@@ -91,7 +109,13 @@ body {
 .desvanecer {
     -webkit-animation: fadeIn 1s;
 }
-
+.center {
+    text-align: center
+}
+.centerFlex {
+    display: flex;
+    justify-content: center;
+}
 @-webkit-keyframes fadeIn{
     0%{
         opacity: 0;
@@ -106,4 +130,9 @@ body {
     60%{
         opacity: 0;
     }
+}
+
+
+#empecemos:hover > span{
+    color: #12223d;
 }
