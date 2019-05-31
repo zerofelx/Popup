@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400&display=swap');
 
 .tOrange {
     color: #FF9924
@@ -22,7 +22,7 @@ body {
     border: transparent;
     box-shadow: #EAEAEA 2px 2px;
     color: white;
-    font-weight: 600;
+    font-weight: 200;
     outline: none;
 }
 .botón button:hover {
