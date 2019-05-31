@@ -19,7 +19,7 @@ body {
     align-items: center;
     margin: 2px;
 
-    animation-duration: 0.2s;
+    animation-duration: 0.1s;
     animation-name: acordeonOut;
 }
 .texto {
@@ -27,7 +27,7 @@ body {
     color: white;
 }
 .imagen:hover {
-    animation-duration: 0.2s;
+    animation-duration: 0.1s;
     animation-name: acordeon;
     animation-iteration-count: infinite;
 }
