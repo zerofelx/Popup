@@ -27,7 +27,7 @@ body {
     color: white;
 }
 .imagen:hover {
-    animation-duration: 0.5s;
+    animation-duration: 0.2s;
     animation-name: acordeon;
     width: 30%
     /* animation-iteration-count: infinite; */
