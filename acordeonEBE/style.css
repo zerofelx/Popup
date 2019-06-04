@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+}
+
+.centradoTotal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.imagen {
+    width: 15%;
+    background-image: url('imagen.jpg');
+    height: 50vh;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+
+    animation-duration: 0.2s;
+    animation-name: acordeonOut;
+}
+.texto {
+    display: none;
+    color: white;
+}
+.imagen:hover {
+    animation-duration: 0.2s;
+    animation-name: acordeon;
+    width: 50%
+    /* animation-iteration-count: infinite; */
+}
+.imagen:hover > .texto {
+    display: inherit;
+    transition: color 5
+}
+
+@keyframes acordeon {
+    from {
+        width: 15%;
+    }
+
+    to {
+        width: 50%
+    }
+}
+
+@keyframes acordeonOut {
+    from {
+        width: 50%;
+    }
+
+    to {
+        width: 15%
+    }
+}
+
+
+@media (max-width: 800px) {
+    .centradoTotal {
+        display: none;
+    }
+    .celular {
+        width: 100%;
+    }
+    .imagenResponsive {
+        width: 80%;
+        margin: 0 auto;
+        height: 10vh;
+        background-image: url('imagen.jpg');
+        background-size: 100%;
+
+        animation-duration: 0.8s;
+        animation-name: acordeonOutR;
+    }
+    .tituloResponsive {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .tituloResponsive h1 {
+        margin: 10px 0 0 0;
+    }
+
+    .textoResponsive {
+        display: none;
+        color: white;
+    }
+
+    .imagenResponsive:hover {
+        animation-duration: 0.8s;
+        animation-name: acordeonR;
+        height: 40vh
+    }
+    .imagenResponsive:hover > .textoResponsive {
+        -webkit-animation: display 0.8s;
+        display: inherit;
+        transition: color 5
+    }
+
+    @keyframes acordeonR {
+        from {
+            height: 10vh;
+        }
+    
+        to {
+            height: 40vh
+        }
+    }
+    
+    @keyframes acordeonOutR {
+        from {
+            height: 40vh;
+        }
+    
+        to {
+            height: 10vh;
+        }
+    }
+
+    @-webkit-keyframes display {
+        0%{
+            opacity: 0;
+        }
+    }
+}
