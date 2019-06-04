@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,400&display=swap');
 
+@media (max-width: 600px) {
+    #cambiar {
+        display: none !important;
+    }
+}
+
 .tOrange {
     color: #FF9924
 }
