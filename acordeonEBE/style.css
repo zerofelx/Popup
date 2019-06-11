@@ -93,11 +93,12 @@ body {
         display: none;
         color: white;
     }
-
+    
     .imagenResponsive:hover {
         animation-duration: 0.8s;
         animation-name: acordeonR;
-        height: 40vh
+        height: 80vh;
+        overflow: hidden;
     }
     .imagenResponsive:hover > .textoResponsive {
         -webkit-animation: display 1.5s;
@@ -111,13 +112,13 @@ body {
         }
     
         to {
-            height: 40vh
+            height: 80vh
         }
     }
     
     @keyframes acordeonOutR {
         from {
-            height: 40vh;
+            height: 80vh;
         }
     
         to {
