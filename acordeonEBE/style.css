@@ -100,7 +100,7 @@ body {
         height: 40vh
     }
     .imagenResponsive:hover > .textoResponsive {
-        -webkit-animation: display 0.8s;
+        -webkit-animation: display 1.5s;
         display: inherit;
         transition: color 5
     }
